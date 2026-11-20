@@ -1,0 +1,39 @@
+  :root {
+    /* Primario base más suave, azul petróleo */
+    --bs-primary: #3d9ad3;
+    --bs-primary-rgb: 58, 107, 138;
+
+    /* Fondo general: gris cálido muy claro, no blanco puro */
+    --bs-body-bg: #c7f9fc;
+    --bs-body-color: #2e2e2e;
+  }
+
+  body {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+  }
+
+  /* Cabecera: variante oscura del primary, no negro puro */
+  header {
+    background-color: var(--bs-primary); /* shade-color($primary, 25%) aprox */
+  }
+
+  /* Botones outline-success reconvertidos a un tono más suave y coherente con el primary */
+  .btn-outline-success {
+    --bs-btn-color: #3a6b8a;
+    --bs-btn-border-color: #3a6b8a;
+    --bs-btn-hover-bg: #3a6b8a;
+    --bs-btn-hover-border-color: #3a6b8a;
+    --bs-btn-active-bg: #2c4f66;
+    --bs-btn-active-border-color: #2c4f66;
+  }
+
+  /* Tarjetas/bloques con sombra suave sobre el fondo cálido */
+  .shadow {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08) !important;
+  }
+
+  /* Bordes menos duros que el gris por defecto de Bootstrap */
+  .border {
+    border-color: #d8d3c7 !important;
+  }
